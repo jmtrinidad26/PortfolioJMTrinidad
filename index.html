@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel = "stylesheet" href = "style.css"/>
+    <script src = "script.js"></script>
+</head>
+<body>
+    <nav id = "desktop-nav">
+        <div class = "logo">JM Trinidad</div>
+        <div>
+            <ul class = "nav-links">
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#skills">Skills</a></li>
+                <li><a href = "#career">Goals</a></li>
+                <li><a href = "#future">Future</a></li>
+                <li><a href = "#contact">Contact</a></li>
+            </ul>
+        </div>
+        <img src = "./assets/moon.png" alt = "Toggle Dark Mode" id="darkModeBtn" class="icon">
+    
+    </nav>
+    <section id = "profile">
+        <div class = "section__pic-container">
+            <img src="./assets/profile-pic.png" alt="JM Profile Pic" class = "imageProf" >
+        </div>
+        <div class = "section__text">
+            <p class = "section__text__p1">Hello, I'm</p> 
+            <h1 class = "title">Jean Emmanuel C. Trinidad</h1>
+            <p class ="section__text__p2">Computer Science Student</p>
+            <div class = "btn-container">
+                <button class = "btn btn-color-2" onclick = "window.open('./assets/resume-example.pdf')">
+                Download CV</button>
+                <button class = "btn btn-color-1" onclick = "location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div class = "socials-container">
+                <img src = "./assets/facebook.png" alt = "My Facebook Profile" 
+                class = "icon" onclick = "location.href ='https://www.facebook.com/jeanemmanueltrinidad'"
+                />
+                <img src = "./assets/github.png" alt = "My Github Profile" 
+                class = "icon" onclick = "location.href ='https://github.com/jmtrinidad26'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id = "about">
+        <p class = "section__text__p1"><br>Get to Know More</p>
+        <h1 class = "title">About Me</h1>
+        <div class = "section-container">
+            <div class = "section__pic-container">
+                <img src = "./assets/about-pic.png" alt = "about pic " class = "about-pic"/>
+            </div>
+            <div class = "about-details-container">
+                <div class = "about-containers">
+                    <div class="details-container">
+                        <img src = "./assets/experience.png"alt= "Experience icon" class = "icon"/>
+                        <h3>Experience</h3>
+                        <p>On the Job Training<br>Wonder Grace Company</p>
+                    </div>
+                    <div class = "details-container">
+                        <img src = "./assets/education.png"alt= "Education icon" class = "icon"/>
+                        <h3>Education</h3>
+                        <p>2nd year B.S. in Computer Science<br>STI Ortigas-Cainta</p>
+                    </div>
+                </div>
+                <div class = "text-container">
+                    <p>I am a responsible, hardworking, and motivated individual who excels under pressure and meets strict deadlines. 
+                        Along with a creative mindset, I embrace new challenges and opportunities. Additionally, my strong organizational skills 
+                        and ability to plan ahead ensure effective time management.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src= "./assets/arrow.png" alt = "Arrow Icon" class = "icon arrow" onclick = "location.href='./#skills'"/>
+    </section>
+    <section id = "skills">
+        <p class = "section__text__p1">Explore My</p>
+        <h1 class = "title">Skills</h1>
+        <br><br>
+        <div class = "skills-details-container">
+            <div class = "about-containers">
+                <div class = "details-container"> 
+                    <h2 class = "skills-sub-title">Hard Skills</h2> 
+                    <div class ="article-container">
+                        <article>
+                            <img src = "./assets/checkmark.png" alt ="Skill icon" class = "icon"/>
+                            <div>
+                                <h4>Basic knowledge in Java, Python, and C#</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "./assets/checkmark.png" alt ="Skill icon" class = "icon"/>
+                            <div>
+                                <h4>Basic video editing skills</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "./assets/checkmark.png" alt ="Skill icon" class = "icon"/>
+                            <div>
+                                <h4>Adequate Microsoft Office skills</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class = "details-container"> 
+                    <h2 class = "skills-sub-title">Soft Skills</h2> 
+                    <div class ="article-container">
+                        <article>
+                            <img src = "./assets/checkmark.png" alt ="Skill icon" class = "icon"/>
+                            <div>
+                                <h4>Adaptability</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "./assets/checkmark.png" alt ="Skill icon" class = "icon"/>
+                            <div>
+                                <h4>Multitasking</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "./assets/checkmark.png" alt ="Skill icon" class = "icon"/>
+                            <div>
+                                <h4>Leadership</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "./assets/checkmark.png" alt ="Skill icon" class = "icon"/>
+                            <div>
+                                <h4>Time management</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src= "./assets/arrow.png" alt = "Arrow Icon" class = "icon arrow" onclick = "location.href='./#career'"/>
+    </section>
+    <section id = "career">
+        <p class="section__text__p1 ">A look into my</p>
+        <h1 class="title">Career Goals</h1>
+        <br><br>
+        <div class ="career-goals-details">
+            <div class = "about-details-container">
+                <div class = "about-containers">
+                    <div class = "goal-containers">
+                        <div class = "goal-container">
+                            <img src = "./assets/programming-languages-1.avif" alt ="stock image" class = "career-image">          
+                            <h5>Learn key programming languages.</h5>
+                        </div>
+                        <div class = "goal-container">
+                            <img src = "./assets/images.jpg" alt ="stock image" class = "career-image">          
+                            <h5>Gain internship experience.</h5>
+                        </div>
+                    </div>
+                    <div class = "goal-containers">
+                        <div class = "goal-container">                  
+                            <img src = "./assets/computer-programmers-1.webp" alt ="stock image" class = "career-image">          
+                            <h5>Attain financial stability</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <img src= "./assets/arrow.png" alt = "Arrow Icon" class = "icon arrow" onclick = "location.href='./#future'"/>
+    </section>
+
+    <section id = "future">
+      <p class="section__text__p1">Where I Would Be</p>
+      <h1 class="title">5 Years from Now</h1>
+      <br>  
+      <div class ="future-details">
+        <div class = "about-details-container">
+            <div class = "about-containers">
+                <div class="future-containers">
+                    <div class = "future-container">
+                        <img src = "./assets/upward-arrow.png" alt ="icon" class = "icon">
+                        <h3>Employed as a software engineer at a leading tech company.</h3>
+                    </div>
+                    <div class = "future-container">
+                        <img src = "./assets/desk-lamp.png" alt ="icon" class = "icon">
+                        <h3>Pursuing advanced studies.</h3>
+                    </div>
+                    <div class = "future-container">
+                        <img src = "./assets/project.png" alt ="icon" class = "icon">
+                        <h3>Balancing work and personal projects.</h3>
+                    </div>
+                    <div class = "future-container">
+                        <img src = "./assets/mentor.png" alt ="icon" class = "icon">
+                        <h3>Mentoring junior developers.</h3>
+                    </div>
+                    <div class = "future-container">
+                        <img src = "./assets/problem-solving.png" alt ="icon" class = "icon">
+                        <h3>Passionate problem solver.</h3>
+                    </div>
+                    <div class = "future-container">
+                        <img src = "./assets/master.png" alt ="icon" class = "icon">
+                        <h3>Mastering coding languages and frameworks.</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+      </div> 
+
+
+      <img src= "./assets/arrow.png" alt = "Arrow Icon" class = "icon arrow" onclick = "location.href='./#contact'"/>
+    </section>
+
+    <section id = "contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container"  onclick="window.location.href='https://outlook.office.com/mail/deeplink/compose?to=trinidad.304986@ortigas-cainta.sti.edu.ph'">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="email-icon"
+            onclick="window.location.href='https://outlook.office.com/mail/deeplink/compose?to=trinidad.304986@ortigas-cainta.sti.edu.ph'">
+          <p>
+          <a href="https://outlook.office.com/mail/deeplink/compose?to=trinidad.304986@ortigas-cainta.sti.edu.ph">trinidad.304986@ortigas-cainta.sti.edu.ph</a>
+         </p>
+        </div>
+        <div class="contact-info-container" onclick="window.location.href='https://www.facebook.com/jeanemmanueltrinidad'">
+          <img
+            src="./assets/facebook.png"
+            alt="Facebook icon"
+            class="contact-icon"
+          />
+          <p><a href="https://www.facebook.com/jeanemmanueltrinidad">Facebook</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href = "#career">Goals</a></li>
+              <li><a href = "#future">Future</a></li>
+            </ul>
+          </div>
+        </nav>
+        <img src= "./assets/arrow.png" alt = "Arrow Icon" class = "icon arrow-up" onclick = "location.href='./#'"/>
+   
+    </footer>
+</body>
+</html>
+
