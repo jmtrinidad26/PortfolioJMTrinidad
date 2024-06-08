@@ -18,6 +18,8 @@ html{
 }   
 p{
     color:rgb(85,85,85);
+
+
 }
 
 a,.btn{
@@ -25,7 +27,6 @@ a,.btn{
 }
 
 /*NAVIGATION*/
-
 nav,.nav-links{
     display:flex;
 }
@@ -86,8 +87,9 @@ section {
 }
 
 .section__pic-container{
-    position:relative;
-    justify-content: center;
+     
+    position:block;
+    justify-content:center;
     display:flex;
     height:400px;
     width:400px;
@@ -200,6 +202,10 @@ section {
 .about-pic{
     border-radius:2rem;  
 }
+.about-pic:hover{
+    transition:all ease-in-out 100ms;
+    transform:scale(1.1) rotate(-3deg);
+}
 .arrow{ 
     cursor:pointer;
     position:absolute;
@@ -262,6 +268,10 @@ article{
     justify-content:safe;
     gap:0.5rem;
 }
+#skills .icon:hover{
+   
+    filter: invert(1) sepia(1) saturate(10) hue-rotate(70deg) brightness(0.8);
+}
 
 /* CAREER*/
 #career{
@@ -299,6 +309,7 @@ article{
 }
 
 h5{
+    font-size:medium;
     padding:1rem;
     border-radius: 2rem;
     border:rgb(53,53,53) 0.1rem solid;
@@ -393,10 +404,19 @@ footer a {
     text-align: center;
   }
 .arrow-up{
+    cursor:pointer;
     transform: rotate(180deg);  
     position:absolute;
     right:1rem;
     bottom:2.5rem;
+}
+label{
+    position:relative;
+    font-weight: bold;
+    font-size:x-small;
+    right:-78.3rem;
+    bottom:1.9rem;
+    font-style: italic;
 }
 
 /* DARK MODE*/
@@ -450,22 +470,24 @@ footer a {
     background:black;
 }
 .dark-mode .btn-color-1:hover,.dark-mode .btn-color-2:hover{
-    background:#cecece;
+    background: rgb(53,53,53);
     color: black;
+}
+.dark-mode .btn-color-2:hover{
+    border-color: black;
+    color:white;
 }
 .dark-mode .btn-color-1:hover{
     background: #ffffff;
 }
+
 .dark-mode .icon{
     filter:invert(100%);
 }
 .dark-mode .icon:hover{
     filter: invert(60%) brightness(100%); 
 }
-.dark-mode .btn-color-2:hover{
-    color: #000000; 
-    border:white 0.1rem solid;
-}
+
 .dark-mode .details-container,.dark-mode .future-container,.dark-mode .goal-container{
     background:rgb(19, 19, 19);
 }
@@ -483,5 +505,4 @@ footer a {
 .dark-mode .contact-info-upper-container
 {
     box-shadow: 0px 0px 30px rgb(186, 186, 186);
-    
 }
