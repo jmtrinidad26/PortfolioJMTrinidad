@@ -180,6 +180,21 @@ section {
 .btn-container{
     gap:1rem;
 }
+/*ARROWS*/
+.arrow{ 
+    cursor:pointer;
+    position:absolute;
+    right:1rem;
+    bottom:2.5rem;
+   
+}
+.arrow-up{
+    cursor:pointer;
+    transform: rotate(180deg);  
+    position:absolute;
+    right:1rem;
+    bottom:2.5rem;
+}
 
 /* About Section*/
 #about{
@@ -206,13 +221,20 @@ section {
     transition:all ease-in-out 100ms;
     transform:scale(1.1) rotate(-3deg);
 }
-.arrow{ 
-    cursor:pointer;
-    position:absolute;
-    right:1rem;
-    bottom:2.5rem;
-   
+.read-more {
+    display: none;
 }
+.show-more {
+    cursor: pointer;
+    font-size: 14px;
+    color: #007BFF;
+    display: inline-block;
+    margin-top: 10px;
+}
+.show-more:hover{
+    text-decoration: underline;
+}
+
 .details-container{
     
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
@@ -403,13 +425,7 @@ footer {
 footer a {
     text-align: center;
   }
-.arrow-up{
-    cursor:pointer;
-    transform: rotate(180deg);  
-    position:absolute;
-    right:1rem;
-    bottom:2.5rem;
-}
+
 label{
     position:relative;
     font-weight: bold;
