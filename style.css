@@ -290,7 +290,7 @@ article{
     justify-content:safe;
     gap:0.5rem;
 }
-#skills .icon:hover{
+.goal-containers .icon:hover{
    
     filter: invert(1) sepia(1) saturate(10) hue-rotate(70deg) brightness(0.8);
 }
@@ -459,7 +459,7 @@ label{
 .dark-mode{
     background-color: black;
 }
-.dark-mode .arrow,.dark-mode .arrow-up{
+.dark-mode .arrow:hover,.dark-mode .arrow-up:hover, .dark-mode label:hover{
     color: #5b5b5b;   
 }
 .dark-mode .nav-links a {
