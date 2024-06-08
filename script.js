@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });	
 
 });
+//read more btn
 function toggleReadMore() {
     var moreText = document.querySelector('.read-more');
     var showMoreBtn = document.querySelector('.show-more');

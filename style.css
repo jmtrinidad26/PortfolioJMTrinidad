@@ -451,7 +451,6 @@ label{
     content:url(./assets/sun.png);
     transform:scale(1);
 }
-
 .dark-mode {
     transition:all ease-in-out 100ms;
     background-color: #000000;
@@ -459,6 +458,9 @@ label{
 }
 .dark-mode{
     background-color: black;
+}
+.dark-mode .arrow,.dark-mode .arrow-up{
+    color: #5b5b5b;   
 }
 .dark-mode .nav-links a {
     color: #fff; 
