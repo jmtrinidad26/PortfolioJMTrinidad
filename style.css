@@ -298,10 +298,16 @@ section {
     overflow: hidden;
     border: 1px solid #f0f0f0;
     transition: transform 0.2s ease;
+    cursor: pointer;
 }
 
 .goal-container:hover {
     transform: translateY(-4px);
+}
+
+.goal-container:focus-visible {
+    outline: 3px solid rgba(26,26,26,0.12);
+    outline-offset: 6px;
 }
 
 .career-image {
