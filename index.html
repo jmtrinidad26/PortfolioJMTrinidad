@@ -1,258 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel = "stylesheet" href = "style.css"/>
-    
-    <script src = "script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JM Trinidad | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-    <nav id = "desktop-nav">
-        <div class = "logo">JM Trinidad</div>
-        <div>
-            <ul class = "nav-links">
-                <li><a href = "#about">About</a></li>
-                <li><a href = "#skills">Skills</a></li>
-                <li><a href = "#career">Hobbies</a></li>
-                <li><a href = "#future">Future</a></li>
-                <li><a href = "#contact">Contact</a></li>
-            </ul>
-        </div>
-        <img src = "./assets/moon.png" alt = "Toggle Dark Mode" id="darkModeBtn" class="icon">
-    
-    </nav>
-    <section id = "profile">
-        <div class = "section__pic-container">
-            <img src="./assets/profile-pic.png" alt="JM Profile Pic" class = "imageProf" >
-        </div>
-        <div class = "section__text">
-            <p class = "section__text__p1">Hello, I'm</p> 
-            <h1 class = "title">Jean Emmanuel C. Trinidad</h1>
-            <p class ="section__text__p2">Computer Science Student</p>
-            <div class = "btn-container">
-                <button class = "btn btn-color-2" onclick = "window.open('./assets/resume-example.pdf')">
-                Download CV</button>
-                <button class = "btn btn-color-1" onclick = "location.href='./#contact'">
-                    Contact Info
-                </button>
-            </div>
-            <div class = "socials-container">
-                <img src = "./assets/facebook.png" alt = "My Facebook Profile" 
-                class = "icon" onclick = "location.href ='https://www.facebook.com/jeanemmanueltrinidad'"
-                />
-                <img src = "./assets/github.png" alt = "My Github Profile" 
-                class = "icon" onclick = "location.href ='https://github.com/jmtrinidad26'"
-                />
-            </div>
-        </div>
-    </section>
-    <section id = "about">
-        <p class = "section__text__p1"><br>Get to Know More</p>
-        <h1 class = "title">About Me</h1>
-        <div class = "section-container">
-            <div class = "section__pic-container">
-                <img src = "./assets/about-pic.png" alt = "about pic " class = "about-pic"/>
-            </div>
-            <div class = "about-details-container">
-                <div class = "about-containers">
-                    <div class="details-container">
-                        <img src = "./assets/experience.png"alt= "Experience icon" class = "icon"/>
-                        <h3>Experience</h3>
-                        <p>On the Job Training<br>Wonder Grace Company</p>
-                    </div>
-                    <div class = "details-container">
-                        <img src = "./assets/education.png"alt= "Education icon" class = "icon"/>
-                        <h3>Education</h3>
-                        <p>2nd year B.S. in Computer Science<br>STI Ortigas-Cainta</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>I am a responsible, hardworking, and motivated individual who excels under pressure and meets strict deadlines. Along with a creative mindset, I embrace new challenges and opportunities. Additionally, my strong organizational skills and ability to plan ahead ensure effective time management. I am also an excellent communicator, able to <br><span class="read-more">convey complex information clearly and concisely to diverse audiences. My adaptability and eagerness to learn enable me to stay current with industry trends and best practices. Whether working independently or as part of a team, I consistently strive for excellence in all my endeavors.</span>
-                        <span class="show-more" onclick="toggleReadMore()">Read More</span>
-                    </p>
-                    
-                </div>
-            </div>
-        </div>
-        <img src= "./assets/arrow.png" alt = "Arrow Icon" class = "icon arrow" onclick = "location.href='./#skills'"/>
-    </section>
-    <section id = "skills">
-        <p class = "section__text__p1">Explore My</p>
-        <h1 class = "title">Skills</h1>
-        <br><br>
-        <div class = "skills-details-container">
-            <div class = "about-containers">
-                <div class = "details-container"> 
-                    <h2 class = "skills-sub-title">Hard Skills</h2> 
-                    <div class ="article-container">
-                        <article>
-                            <img src = "./assets/checkmark.png" alt ="Skill icon" class = "icon"/>
-                            <div>
-                                <h4>Basic knowledge in Java, Python, and C#</h4>
-                            </div>
-                        </article>
-                        <article>
-                            <img src = "./assets/checkmark.png" alt ="Skill icon" class = "icon"/>
-                            <div>
-                                <h4>Basic video editing skills</h4>
-                            </div>
-                        </article>
-                        <article>
-                            <img src = "./assets/checkmark.png" alt ="Skill icon" class = "icon"/>
-                            <div>
-                                <h4>Adequate Microsoft Office skills</h4>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class = "details-container"> 
-                    <h2 class = "skills-sub-title">Soft Skills</h2> 
-                    <div class ="article-container">
-                        <article>
-                            <img src = "./assets/checkmark.png" alt ="Skill icon" class = "icon"/>
-                            <div>
-                                <h4>Adaptability</h4>
-                            </div>
-                        </article>
-                        <article>
-                            <img src = "./assets/checkmark.png" alt ="Skill icon" class = "icon"/>
-                            <div>
-                                <h4>Multitasking</h4>
-                            </div>
-                        </article>
-                        <article>
-                            <img src = "./assets/checkmark.png" alt ="Skill icon" class = "icon"/>
-                            <div>
-                                <h4>Leadership</h4>
-                            </div>
-                        </article>
-                        <article>
-                            <img src = "./assets/checkmark.png" alt ="Skill icon" class = "icon"/>
-                            <div>
-                                <h4>Time management</h4>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src= "./assets/arrow.png" alt = "Arrow Icon" class = "icon arrow" onclick = "location.href='./#career'"/>
-    </section>
-    <section id = "career">
-        <p class="section__text__p1 ">A look into my</p>
-        <h1 class="title">Hobbies</h1>
-        <br><br>
-        <div class ="career-goals-details">
-            <div class = "about-details-container">
-                <div class = "about-containers">
-                    <div class = "goal-containers">
-                        <div class = "goal-container">
-                            <img src = "./assets/programming-languages-1.avif" alt ="stock image" class = "career-image">          
-                            <h5>Reading</h5>
-                        </div>
-                        <div class = "goal-container">
-                            <img src = "./assets/images.jpg" alt ="stock image" class = "career-image">          
-                            <h5>Learning new skills</h5>
-                        </div>
-                    </div>
-                    <div class = "goal-containers">
-                        <div class = "goal-container">                  
-                            <img src = "./assets/computer-programmers-1.webp" alt ="stock image" class = "career-image">          
-                            <h5>Cooking</h5>
-                        </div>
-                    </div>
-                    
+  <nav id="desktop-nav">
+    <div class="logo">JM Trinidad</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#future">Future</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <img src="./assets/moon.png" alt="Toggle Dark Mode" id="darkModeBtn" class="icon" />
+  </nav>
 
-                </div>
-            </div>
-        </div>
-        <img src= "./assets/arrow.png" alt = "Arrow Icon" class = "icon arrow" onclick = "location.href='./#future'"/>
-    </section>
+  <!-- PROFILE -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/me.png" alt="JM Profile Pic" class="imageProf" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Jean Emmanuel C. Trinidad</h1>
+      <p class="section__text__p2">Computer Science Student | Full-Stack Developer</p>
 
-    <section id = "future">
-      <p class="section__text__p1">Where I Would Be</p>
-      <h1 class="title">5 Years from Now</h1>
-      <br>  
-      <div class ="future-details">
-        <div class = "about-details-container">
-            <div class = "about-containers">
-                <div class="future-containers">
-                    <div class = "future-container">
-                        <img src = "./assets/upward-arrow.png" alt ="icon" class = "icon">
-                        <h3>Employed as a software engineer at a leading tech company.</h3>
-                    </div>
-                    <div class = "future-container">
-                        <img src = "./assets/desk-lamp.png" alt ="icon" class = "icon">
-                        <h3>Pursuing advanced studies.</h3>
-                    </div>
-                    <div class = "future-container">
-                        <img src = "./assets/project.png" alt ="icon" class = "icon">
-                        <h3>Balancing work and personal projects.</h3>
-                    </div>
-                    <div class = "future-container">
-                        <img src = "./assets/mentor.png" alt ="icon" class = "icon">
-                        <h3>Mentoring junior developers.</h3>
-                    </div>
-                    <div class = "future-container">
-                        <img src = "./assets/problem-solving.png" alt ="icon" class = "icon">
-                        <h3>Passionate problem solver.</h3>
-                    </div>
-                    <div class = "future-container">
-                        <img src = "./assets/master.png" alt ="icon" class = "icon">
-                        <h3>Mastering coding languages and frameworks.</h3>
-                    </div>
-                </div>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">
+          Contact Info
+        </button>
+      </div>
 
-            </div>
+      <div class="socials-container">
+        <img src="./assets/facebook.png" class="icon"
+          onclick="location.href='https://www.facebook.com/jeanemmanueltrinidad'" />
+        <img src="./assets/github.png" class="icon"
+          onclick="location.href='https://github.com/jmtrinidad26'" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+
+    <div class="section-container">
+
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" class="icon" />
+            <h3>Experience</h3>
+            <p>Full-Stack Developer<br />Cloud-Based Web Applications</p>
+          </div>
+
+          <div class="details-container">
+            <img src="./assets/education.png" class="icon" />
+            <h3>Education</h3>
+            <p>B.S. Computer Science<br />STI Ortigas-Cainta (2023–Present)</p>
+          </div>
         </div>
 
-      </div> 
-
-
-      <img src= "./assets/arrow.png" alt = "Arrow Icon" class = "icon arrow" onclick = "location.href='./#contact'"/>
-    </section>
-
-    <section id = "contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container"  onclick="window.location.href='https://outlook.office.com/mail/deeplink/compose?to=trinidad.304986@ortigas-cainta.sti.edu.ph'">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="email-icon"
-            onclick="window.location.href='https://outlook.office.com/mail/deeplink/compose?to=trinidad.304986@ortigas-cainta.sti.edu.ph'">
+        <div class="text-container">
           <p>
-          <a href="https://outlook.office.com/mail/deeplink/compose?to=trinidad.304986@ortigas-cainta.sti.edu.ph">trinidad.304986@ortigas-cainta.sti.edu.ph</a>
-         </p>
-        </div>
-        <div class="contact-info-container" onclick="window.location.href='https://www.facebook.com/jeanemmanueltrinidad'">
-          <img
-            src="./assets/facebook.png"
-            alt="Facebook icon"
-            class="contact-icon"
-          />
-          <p><a href="https://www.facebook.com/jeanemmanueltrinidad">Facebook</a></p>
+            Experienced in building and deploying full-stack applications to cloud platforms such as Vercel.
+            Skilled in React, API integration, and cloud-based authentication.
+            Familiar with scalable and secure cloud solutions, CI/CD workflows, and modular application design.
+            <br /><br />
+            <strong>Why Hire Me?</strong><br />
+            • Willingness to Learn & Adapt – Open to training in cloud and security tools<br />
+            • Detail-Oriented – Ensures accuracy in configurations, code, and documentation<br />
+            • Self-Driven Learner – Continuously improves skills beyond coursework
+          </p>
         </div>
       </div>
-    </section>
-    <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href = "#career">Hobbies</a></li>
-              <li><a href = "#future">Future</a></li>
-            </ul>
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+
+    <div class="skills-details-container">
+      <div class="about-containers">
+
+        <div class="details-container">
+          <h2 class="skills-sub-title">Technical Skills</h2>
+          <div class="article-container">
+            <article><img src="./assets/checkmark.png" class="icon" /><h4>JavaScript, Python, PHP, Java, C#</h4></article>
+            <article><img src="./assets/checkmark.png" class="icon" /><h4>React, ASP.NET MVC, Node.js, Clerk</h4></article>
+            <article><img src="./assets/checkmark.png" class="icon" /><h4>MongoDB, MS SQL Server</h4></article>
+            <article><img src="./assets/checkmark.png" class="icon" /><h4>Git/GitHub, Postman, Vercel</h4></article>
+            <article><img src="./assets/checkmark.png" class="icon" /><h4>Cloudinary, Azure AD, RESTful APIs</h4></article>
           </div>
-        </nav>
-        <img src= "./assets/arrow.png" alt = "Arrow Icon" class = "icon arrow-up" onclick = "location.href='./#'"/>
-        <label class = "icon-up-label">Go back up</label>
-   
-    </footer>
+        </div>
+
+        <div class="details-container">
+          <h2 class="skills-sub-title">Certifications & Training</h2>
+          <ul>
+            <li>Cloud & DevOps Basics – DICT CAR ILCDS</li>
+            <li>Web Development Workshop 101 – MST Connect</li>
+            <li>Microsoft Security: Compliance & Identity Fundamentals</li>
+            <li>Cybersecurity Awareness Webinar – DICT South Cotabato</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+
+    <div class="about-containers">
+
+      <div class="goal-container">
+        <img src="./assets/stronglabs.png" class="career-image" />
+        <h5>StrongLabs Platform</h5>
+        <p>
+          Cloud-hosted LMS with Azure AD authentication, RBAC, and Cloudinary integration.<br />
+          <strong>Role:</strong> Full-Stack Developer
+        </p>
+      </div>
+
+      <div class="goal-container">
+        <img src="./assets/blog.png" class="career-image" />
+        <h5>Blog Application</h5>
+        <p>
+          React blog with CRUD operations and dynamic routing.<br />
+          <strong>Role:</strong> Full-Stack React Developer
+        </p>
+      </div>
+
+      <div class="goal-container">
+        <img src="./assets/weather.png" class="career-image" />
+        <h5>Weather Application</h5>
+        <p>
+          Real-time weather app using external APIs and modular components.<br />
+          <strong>Role:</strong> Frontend Developer / API Integrator
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FUTURE -->
+  <section id="future">
+    <p class="section__text__p1">Where I See Myself</p>
+    <h1 class="title">5 Years From Now</h1>
+
+    <div class="future-containers">
+      <div class="future-container"><h3>Cloud or Software Engineer at a leading tech company</h3></div>
+      <div class="future-container"><h3>Certified in cloud architecture and security</h3></div>
+      <div class="future-container"><h3>Contributor to open-source projects</h3></div>
+      <div class="future-container"><h3>Mentor to junior developers</h3></div>
+      <div class="future-container"><h3>Building scalable real-world cloud solutions</h3></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section__text__p1">Get In Touch</p>
+    <h1 class="title">Contact Me</h1>
+
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <p>Email: <a href="mailto:jmtrinidad22@gmail.com">jmtrinidad22@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <p>Phone: <a href="tel:+639272554233">0927-255-4233</a></p>
+      </div>
+      <div class="contact-info-container">
+        <p>Location: Antipolo City, Rizal</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Jean Emmanuel C. Trinidad</p>
+  </footer>
 </body>
 </html>
-    
